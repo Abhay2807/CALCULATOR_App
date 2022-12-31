@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:gravity="right|bottom"
+        android:textSize="50sp"
+        android:padding="12sp"
+        android:background="@color/Resultcolor"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="48sp"
+            android:onClick="digitClicked"
+            android:text="@string/_7"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_8"
+            android:layout_margin="3dp"
+            android:textSize="48sp"
+            android:onClick="digitClicked"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="digitClicked"
+            android:layout_weight="1"
+            android:text="9"
+            android:layout_margin="3dp"
+            android:textSize="48sp"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="opClicked"
+            android:text="/"
+            android:textSize="48sp"></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            android:onClick="digitClicked"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="digitClicked"
+            android:text="5"
+            android:textSize="48sp"></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="digitClicked"
+            android:layout_weight="1"
+            android:textSize="48sp"
+            android:text="6"
+            android:layout_margin="3dp"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="48sp"
+            android:onClick="opClicked"
+            android:layout_margin="3dp"
+            ></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            android:onClick="digitClicked"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:layout_margin="3dp"
+            android:textSize="48sp"
+            android:onClick="digitClicked"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="digitClicked"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="opClicked"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            ></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            android:onClick="digitClicked"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="AC"
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            android:onClick="acClicked"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="decDigitClicked"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="48sp"
+            android:layout_margin="3dp"
+            ></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="48sp"
+            android:onClick="opClicked"
+            android:layout_margin="3dp"
+            ></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="48sp"
+            android:text="="
+            android:layout_margin="3dp"
+            android:onClick="onEqual"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
